@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeNow</title>
+    <link href="./scss/style.css" rel="stylesheet">
+    <link href="./scss/overlay.css" rel="stylesheet">
+
+
+    </link>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img class="nav__logo" src="./src/Logo.svg">
+            <img id="navBtn" class="nav__icon mobileShow" src="./src/Hamburger Menu.svg" onclick="showMenu()">
+            <div id="navMenu" class="nav__menu">
+                <a href="./index.html" class="nav__menuLink">Features</a>
+                <div class="nav__menuSeprarator"></div>
+                <a href="./price.html" class="nav__menuLink">Pricing</a>
+            </div>
+            <ul class="mobileHide">
+                <li>
+                    <a href="./index.html">Features</a>
+                </li>
+                <li>
+                    <a href="./price.html">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <article class="hero__wrapper">
+                <h1 class="hero__header">Post when your audience is most active.</h1>
+                <p class="hero__headInfo">With TimeNow, automatically schedule your posts on Twitter, Linkedln, and
+                    Instagram to post when your followers are most active</p>
+                <button class="btn hero__btn">Start Scheduling</button>
+                <a href="" class="hero__link">View Demo</a>
+                <div>
+                    <img class="hero__shield" src="./src/Shield.svg">
+                    <p class="hero__info">TimeNow does not sell your data.
+                        <a href="" class="hero__link hero__link-under">Learn more</a>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="mockup">
+            <button class="btn mockup__btn mobileHide">Start Scheduling</button>
+            <img src="src/Mockup.png">
+        </section>
+
+        <section class="reasons">
+            <article>
+                <div class="reasons__wrapper">
+                    <h1 class="reasons__header">TimeNow is used by the most influential people.</h1>
+                    <div class="reasons__photoalbum">
+                        <img class="reasons__photo" src="./src/UA1.png">
+                        <img class="reasons__photo" src="./src/UA2.png">
+                        <img class="reasons__photo" src="./src/UA3.png">
+                        <img class="reasons__photo" src="./src/UA4.png">
+                        <img class="reasons__photo" src="./src/UA5.png">
+                        <img class="reasons__photo" src="./src/UA6.png">
+                        <img class="reasons__photo" src="./src/UA7.png">
+                        <img class="reasons__photo" src="./src/UA8.png">
+                    </div>
+                </div>
+                <div class="reasons__wrapper">
+                    <p class="reasons__text">The most influential people on Facebook, Twitter, and Instagram are using
+                        TweetNow to schedule posts when their followers are most active.</p>
+                    <p class="reasons__text">They generally receive 23% more engagement than people who do not.</p>
+                </div>
+            </article>
+        </section>
+        <section class="offer">
+            <article class="offer__one">
+                <h2 class="offer__headerSmall">Unified Dashboard</h2>
+                <h1 class="offer__header">Customizable dashboard for all platforms.</h1>
+                <p class="offer__text">Use Twitter and Instagram but not Linkedln? You can customize your dashboard to
+                    your liking. You can even schedule the same post to individual platforms instead of all platforms.
+                </p>
+                <button class="btn offer__btn">Start Scheduling</button>
+            </article>
+            <article class="offer__two">
+                <h2 class="offer__headerSmall">Enhanced Analytics</h2>
+                <h1 class="offer__header">Real-time data that tells you everything.</h1>
+                <p class="offer__text">Get detailed raports of what's working and what isn't. Engagement rates,
+                    impressions, views, and much more data is available to you through our in-depth dashboard tool.</p>
+                <a class="offer__link" href="">View Live Demo 🡪</a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="footer__logo" src="./src/Logo.svg">
+        <div class="footer__wrapper">
+            <div class="footer__nav">
+                <h3 class="footer__header">Product</h3>
+                <ul>
+                    <li>Homepage</li>
+                    <li>Pricing</li>
+                    <li>Features</li>
+                </ul>
+            </div>
+            <div class="footer__nav">
+                <h3 class="footer__header">Help</h3>
+                <ul>
+                    <li>Live Chat</li>
+                    <li>Send Email</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer__nav">
+                <h3 class="footer__header">Company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Costomers</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="footer__sub">
+                <h3 class="footer__header">Try TweetNow</h3>
+                <div class="footer__subFrame">
+                    <input class="footer__input" type="text" placeholder="Email Address">
+                    <button class="btn footer__btn">Start Scheduling</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <div>
+        <div id="mobile" class="showcase showcase-mobile">
+          <img src="./src/mobile-design.png">
+        </div>
+        <div id="desktop" class="showcase showcase-desktop">
+          <img src="./src/desktop-design.png">
+        </div>
+        <div id="tablet" class="showcase showcase-tablet">
+          <img src="./src/tablet-design.png">
+        </div>
+        <button class="showcase__btn showcase__menuBtn" onclick="showOverlayMenu()">≡
+        </button>
+        <div id="overlayMenu" class="showcase__menu">
+          <button class="showcase__btn" onclick="showOverlayDesign('mobile')">✆</button>
+          <button class="showcase__btn" onclick="showOverlayDesign('tablet')">📱</button>
+          <button class="showcase__btn" onclick="showOverlayDesign('desktop')">💻</button>
+          <form>
+            <label for="vis">Visibility:</label>
+            <input type="range" id="vis" class="showcase__vis" value="2" name="vis" min="0" max="5">
+          </form> 
+        </div>
+    
+    
+      </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/overlay.js"></script>
+</body>
+
+</html>

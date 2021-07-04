@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+body{
+    background-color: #888888;
+}
+
+.mobileHide{
+    display: none;
+
+    @media screen and (min-width: 800px) {
+        display: block;
+    }
+}
+
+.mobileShow{
+    display: block;
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
+}
+
+.btn{
+    background: $darkBlue;
+    border: 0;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.18rem;
+    padding: 1.26rem 1.6rem;
+    border-radius: 0.5rem;
+
+    @media screen and (min-width: 800px) {
+        font-size: 1.35rem;
+        padding: 1.6rem 1.75rem;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 1.28rem;
+        padding: 1.49rem 1.75rem;
+    }
+
+}
+
+

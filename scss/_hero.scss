@@ -1,0 +1,157 @@
+.hero {
+    width: 26.8rem;
+    background: $white;
+    padding-top: 2.3rem;
+    height: 28.9rem;
+    @media screen and (min-width: 800px) {
+        width: 26rem;
+        padding-top: 5.9rem;
+        height: 48rem;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 51.5rem;
+        padding-top: 11rem;
+        height: 58rem;
+    }
+
+    div {
+        background: $white;
+    }
+
+    &__wrapper {
+        background: $white;
+        padding: 0 1rem 0 1.2rem;
+        @media screen and (min-width: 800px) {
+            padding: 0 1rem 0 3rem;
+        }
+        @media screen and (min-width: 1440px) {
+            padding: 0 1rem 0 10.7rem;
+        }
+    }
+
+    &__header {
+        background: $white;
+        color: $darkBlue;
+        font-size: 2.2rem;
+        letter-spacing: 1.17px;
+        line-height: 2.85rem;
+        margin-bottom: 0.75rem;
+
+        @media screen and (min-width: 800px) {
+            width: 20rem;
+            font-size: 2.55rem;
+            font-weight: 900;
+            line-height: 3.3rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 34rem;
+            font-size: 3.87rem;
+            line-height: 4.85rem;
+            margin-bottom: 0.4rem;
+        }
+    }
+    &__headInfo {
+        background: $white;
+        font-size: 1.17rem;
+        line-height: 1.65rem;
+
+        @media screen and (min-width: 800px) {
+            width: 19rem;
+            font-size: 1.33rem;
+            line-height: 2rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 34rem;
+            font-size: 1.288rem;
+            line-height: 2rem;
+        }
+    }
+
+    &__btn {
+        margin-top: 1.2rem;
+        @media screen and (min-width: 800px) {
+            margin-top: 1.3rem;
+            margin-right: 2rem;
+            margin-bottom: 1.92rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 1.1rem;
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        background: $white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-left: 3.1rem;
+        color: $black;
+        letter-spacing: 0.6px;
+
+        @media screen and (min-width: 800px) {
+            margin-left: 3.5rem;
+            font-size: 1.28rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-left: 0.6rem;
+            font-size: 1.28rem;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    &__shield {
+        display: inline-block;
+        position: relative;
+        top: 0.35rem;
+        @media screen and (min-width: 800px) {
+            top: 2.1rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            top: -0.2rem;
+        }
+    }
+    &__info {
+        display: inline-block;
+        width: 20rem;
+
+        background: $white;
+        font-size: 1.17rem;
+        line-height: 1.65rem;
+        position: relative;
+        top: 1.6rem;
+        left: 0.8rem;
+
+        @media screen and (min-width: 800px) {
+            top: 3.48rem;
+            left: 1rem;
+            font-size: 1.3rem;
+            letter-spacing: 0.2px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 40rem;
+            top: -2.3rem;
+            left: 2.4rem;
+            font-size: 1.25rem;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    &__link-under {
+        margin-left: 0rem;
+        position: relative;
+        top: -0.2rem;
+        border-bottom: 1px solid $darkBlue;
+        @media screen and (min-width: 800px) {
+            top: 0;
+        }
+    }
+}

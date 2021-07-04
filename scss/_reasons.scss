@@ -1,0 +1,116 @@
+.reasons{
+    width: 26.8rem;
+    background: $white;
+    height: 37.8rem;
+    padding-top: 3rem;
+
+    @media screen and (min-width: 800px) {
+        width: 57.15rem;
+        padding-top: 6rem;
+        height: 29.6rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 102.9rem;
+        padding-top: 5.8rem;
+        height: 23.6rem;
+    }
+
+    &__header{
+        color: $darkBlue;
+        padding-left: 1.2rem;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        line-height: 2.8rem;
+        padding-bottom: 2.1rem;
+
+        @media screen and (min-width: 800px) {
+            width: 28rem;
+            display: inline-block;
+            margin-left: 1.7rem;
+            font-size: 2.69rem;
+            letter-spacing: 0px;
+            line-height: 3.25rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 45rem;
+            display: inline-block;
+            margin-left: 9.5rem;
+            font-size: 2.55rem;
+            line-height: 3.1rem;
+            padding-bottom: 2.3rem;
+        }
+    }
+
+    &__photoalbum{
+        position: relative;
+        left: 1.2rem;
+        padding-bottom: 1.8rem;
+        width: 25rem;
+        @media screen and (min-width: 800px) {
+            top: 0.3rem;
+            left: 3.3rem;
+            display: inline-block;
+        }
+
+        @media screen and (min-width: 1440px) {
+            top: 0rem;
+            left: 10.7rem;
+            width: 38rem;
+            display: block;
+        }
+    }
+
+    &__photo{
+        width: 3.3rem;
+        margin-right: 0.19rem;
+        margin-bottom: 0.2rem;
+
+        @media screen and (min-width: 800px) {
+            width: 3.5rem;
+            margin-right: 0.55rem;
+            padding-bottom: 0.4rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 3.5rem;
+            margin-right: 0.95rem;
+            margin-bottom: 0.85rem;
+        }
+    }
+
+    &__wrapper{
+        @media screen and (min-width: 1440px) {
+            display: inline-block;
+        
+        }
+    }
+    &__text{
+        width: 25.5rem;
+        font-size: 1.1rem;
+        padding-left: 1.3rem;
+        letter-spacing: 0.4px;
+        line-height: 1.7rem;
+        padding-bottom: 1.9rem;
+
+        @media screen and (min-width: 800px) {
+            width: 55rem;
+            margin-top: -0.2rem;
+            padding-left: 3rem;
+            font-size: 1.28rem;
+            line-height: 2.15rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            position: relative;
+            top: -2.25rem;
+            width: 37rem;
+            left: -0.9rem;
+            font-size: 1.22rem;
+            letter-spacing: 0.5px;
+            line-height: 2rem;
+            
+        }
+    }
+}

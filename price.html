@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeNow-Pricing</title>
+    <link href="./scss/style.css" rel="stylesheet">
+    <link href="./scss/overlay.css" rel="stylesheet">
+</head>
+<body onload="billedOptionChanger()">
+    <header>
+        <nav class="nav">
+            <img class="nav__logo" src="./src/Logo.svg">
+            <img id="navBtn" class="nav__icon mobileShow" src="./src/Hamburger Menu.svg" onclick="showMenu()">
+
+            <div id="navMenu" class="nav__menu">
+                <a href="./index.html" class="nav__menuLink">Features</a>
+                <div class="nav__menuSeprarator"></div>
+                <a href="./price.html" class="nav__menuLink">Pricing</a>
+            </div>
+            <ul class="mobileHide">
+                <li>
+                    <a href="./index.html">Features</a>
+                </li>
+                <li>
+                    <a href="./price.html">Pricing</a>
+                </li>
+            </ul>
+            <button class="btn nav__btn mobileHide">Start Scheduling</button>
+        </nav>
+    </header>
+    <section class="price">
+        <article>
+            <h1 class="price__header">
+                Flexible Plans for Everyone.
+            </h1>
+            <p class="price__headerText">
+                Our plans are made for everyone. Whether you're just starting out on social media, or have been on there for a long time, we have a plan that's right for you.
+            </p>
+            <div class="price__selector">
+                <span id="billedMonthly" class="price__selectorText price__selectorText-bold">Billed Monthly</span>
+                <label class="price__switch">
+                    <input id="billedSwitch" type="checkbox" onclick="billedOptionChanger()">
+                    <span class="price__slider price__round"></span>
+                  </label>
+                <span id="billedYearly" class="price__selectorText">Billed Yearly</span>
+            </div>
+        </article>
+        <div class="price__cardbox">
+            <article class="price__card price__card-small">
+                <h2 class="price__cardHeader">$4<span class="price__cardHeader-small">/mo</span></h2>
+                <p class="price__cardText">Perfect plan if you're just starting out.</p>
+                <ul class="price__cardList">
+                    <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Linkedln Integration</span></li>
+                        <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Twitter Integration</span></li>
+                    <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Real-time Analytics</span></li>
+                </ul>
+                <button class="btn price__cardButton">Subscribe Now</button>
+            </article>
+            <article class="price__card">
+                <h2 class="price__cardHeader">$12<span class="price__cardHeader-small">/mo</span></h2>
+                <p class="price__cardText">Perfect plan if you're a heavy user of social media.</p>
+                <ul class="price__cardList">
+                    <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Linkedln Integration</span></li>
+                    <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Twitter Integration</span></li>
+                    <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Instagram Integration</span></li>
+                    <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Real-time Analytics</span></li>
+                </ul>
+                <button class="btn price__cardButton">Subscribe Now</button>
+            </article>
+            <article class="price__card price__card-big">
+                <h2 class="price__cardHeader">$7<span class="price__cardHeader-small">/mo</span></h2>
+                <p class="price__cardText">Perfect plan if you're just starting out.</p>
+                <ul class="price__cardList">
+                    <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Linkedln Integration</span></li>
+                    <li><img src="./src/Checkmark.svg"><span class="price__cardItem">Twitter Integration</span></li>
+                </ul>
+                <button class="btn price__cardButton">Subscribe Now</button>
+            </article>
+        </div>
+    </section>
+    <footer class="footer">
+        <img class="footer__logo" src="./src/Logo.svg">
+        <div class="footer__wrapper">
+            <div class="footer__nav">
+                <h3 class="footer__header">Product</h3>
+                <ul>
+                    <li>Homepage</li>
+                    <li>Pricing</li>
+                    <li>Features</li>
+                </ul>
+            </div>
+            <div class="footer__nav">
+                <h3 class="footer__header">Help</h3>
+                <ul>
+                    <li>Live Chat</li>
+                    <li>Send Email</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer__nav">
+                <h3 class="footer__header">Company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Costomers</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="footer__sub">
+                <h3 class="footer__header">Try TweetNow</h3>
+                <div class="footer__subFrame">
+                    <input class="footer__input" type="text" placeholder="Email address">
+                    <button class="btn footer__btn">Start Scheduling</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <div>
+        <div id="mobile" class="showcase showcase-mobile">
+          <img src="./src/mobile-design.jpg">
+        </div>
+        <div id="desktop" class="showcase showcase-desktop">
+          <img src="./src/desktop-design.jpg">
+        </div>
+        <div id="tablet" class="showcase showcase-tablet">
+          <img src="./src/tablet-design.png">
+        </div>
+        <button class="showcase__btn showcase__menuBtn" onclick="showOverlayMenu()">≡
+        </button>
+        <div id="overlayMenu" class="showcase__menu">
+          <button class="showcase__btn" onclick="showOverlayDesign('mobile')">✆</button>
+          <button class="showcase__btn" onclick="showOverlayDesign('tablet')">📱</button>
+          <button class="showcase__btn" onclick="showOverlayDesign('desktop')">💻</button>
+          <form>
+            <label for="vis">Visibility:</label>
+            <input type="range" id="vis" class="showcase__vis" value="2" name="vis" min="0" max="5">
+          </form> 
+        </div>
+    
+    
+      </div>
+ 
+     <script src="./js/script.js"></script>
+     <script src="./js/overlay.js"></script>
+</body>
+</html>

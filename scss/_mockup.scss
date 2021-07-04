@@ -1,0 +1,48 @@
+.mockup{
+    width: 26.8rem;
+    background: $teal;
+    padding: 2.8rem 2rem 2.7rem 2rem;
+
+    @media screen and (min-width: 800px) {
+        position: absolute;
+        top: 0;
+        left: 26rem;
+        width: 31.15rem;
+        height: 54.8rem;
+    }
+    @media screen and (min-width: 1440px) {
+        position: absolute;
+        top: 0;
+        left: 51.51rem;
+        width: 51.4rem;
+        height: 64.3rem;
+    }
+
+    img{
+        background: $teal;
+        margin-left: 0.04rem;
+        width: 23.3rem;
+
+        @media screen and (min-width: 800px) {
+            margin-left: 0.55rem;
+            margin-top: 10.1rem;
+            width: 26.9rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-left: 1.68rem;
+            margin-top: 5.03rem;
+            width: 45.2rem;
+        }
+    }
+
+    &__btn{
+        margin-top: 0.15rem;
+        margin-left: 11.5rem;
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 0.1rem;
+            margin-left: 24.6rem;
+        }
+    }
+}
